@@ -1,9 +1,9 @@
 import express from "express";
-
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Hello World");
-});
+const users = [];
 
-app.listen(3000);
+app.get("/user");
+app.listen(3000, (req, res) => {
+  console.log("The app is running at port: 3000");
+});
